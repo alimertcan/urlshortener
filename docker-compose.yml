@@ -1,0 +1,10 @@
+version: "3"
+services:
+  django:
+      container_name: django_server_url
+      build:
+        context: .
+        dockerfile: Dockerfile
+      image: url_shortener
+      ports:
+        - "8000:8000"
